@@ -1,6 +1,6 @@
 import mustache from "mustache";
-import html from "../html/author.html";
+import html from "../html/components/author.html";
 
-export const createAuthor = function (isCompiled, view) {
-  return isCompiled ? mustache.render(html, { author: view }) : html;
+export const createComponent = function (compiled, view) {
+  return compiled ? mustache.render(html, { author: view }) : `<pre>"${html}"</pre>`;
 };

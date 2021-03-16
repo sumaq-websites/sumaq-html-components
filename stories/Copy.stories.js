@@ -1,7 +1,7 @@
-import { createComponent } from "./Author";
+import { createComponent } from "./Copy";
 
 export default {
-  title: "Components/Footer/Author",
+  title: "Components/Footer/Copy",
   argsTypes: {
     compiled: { control: "boolean" },
     view: { control: "object" },
@@ -11,12 +11,12 @@ export default {
     view: {
       name: "Eduardo Lingán",
       link: "http://elingan.com",
-      text: "Made with () by",
+      year: "@2021",
     },
   },
 };
 
-export const Author = ({compiled, view}) => createComponent(compiled, view);
+export const Copy = ({compiled, view}) => createComponent(compiled, view);
 
 // const Template = (args) => createAuthor(true, args);
 
