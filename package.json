@@ -1,13 +1,14 @@
 {
   "name": "@sumaq/html-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML Components for SUMAQ Websites",
   "author": "Eduardo Lingán",
   "license": "ISC",
   "files": [
     "data/**/*",
     "html/**/*",
-    "styles/**/*"
+    "scss/**/*",
+    "themes/**/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

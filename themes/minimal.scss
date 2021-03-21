@@ -3,7 +3,7 @@
 $font-family-primary: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica,
   Arial, sans-serif;
 
-@import "../base.scss";
+@import "../scss/base.scss";
 
 :root {
   --text-color: #{$black-alt};
