@@ -5,6 +5,7 @@ $font-family-primary: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica,
 
 @import "../scss/base.scss";
 
+// by default: data-theme="light"
 :root {
   --text-color: #{$black-alt};
   --bg-color: #{$white-alt};
@@ -41,26 +42,36 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   font-size: $font-size-1;
 }
 h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   font-size: $font-size-2;
 }
 h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
   font-size: $font-size-3;
 }
 h4 {
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
   font-size: $font-size-4;
 }
 h5 {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
   font-size: $font-size-5;
 }
 h6 {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
   font-size: $font-size-6;
 }
 
@@ -131,7 +142,7 @@ legend {
   display: block;
   font-weight: 600;
 }
-º label {
+label {
   display: block;
   margin-bottom: 0.25rem;
 
@@ -213,8 +224,7 @@ td:last-child {
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
+button {
   margin-bottom: 1rem;
 }
 input,
@@ -252,4 +262,9 @@ blockquote {
   p {
     margin-bottom: 0;
   }
+}
+
+iframe {
+  width: 100%;
+  border: 1px solid $grey-lighter;
 }
