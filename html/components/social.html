@@ -1,0 +1,13 @@
+{{# social }}
+<div class="social-networks {{ social.classes }}">
+  <ul>
+    {{# social.list }}
+    <li>
+      <a class="item" href="{{ link }}" title="{{ title }}">
+        <span>{{ name }}</span>
+      </a>
+    </li>
+    {{/ social.list }}
+  </ul>
+</div>
+{{/ social }}

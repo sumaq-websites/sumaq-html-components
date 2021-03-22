@@ -1,0 +1,53 @@
+/**
+ * https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+ * https://www.mydevice.io/
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+ * https://developers.google.com/web/fundamentals/design-and-ux/responsive
+ * http://devfacts.com/media-queries-breakpoints-2020/
+ * https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design
+ */
+
+/**
+ * Aqui se agregan todos los mixins que me ayude a generar
+ * colores, formas, etc, solo las realmente y minimamente necesarias
+ */
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin small-devices {
+  @media screen and (min-width: #{$breakpoint-small}) {
+    @content;
+  }
+}
+
+@mixin small-devices-landscape {
+  @media screen and (min-width: #{$breakpoint-small}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin medium-devices {
+  @media screen and (min-width: #{$breakpoint-medium}) {
+    @content;
+  }
+}
+@mixin medium-devices-landscape {
+  @media screen and (min-width: #{$breakpoint-medium}) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin large-devices {
+  @media screen and (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+@mixin widescreen-devices {
+  @media screen and (min-width: #{$breakpoint-widescreen}) {
+    @content;
+  }
+}

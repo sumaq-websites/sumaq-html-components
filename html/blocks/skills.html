@@ -1,0 +1,10 @@
+{{# skills }}
+<div class="skills {{ skills.classes }} ">
+  <h2>{{ skills.title }}</h2>
+  <ul>
+    {{# skills.list }}
+    <li>{{ name }} ({{ value }})</li>
+    {{/ skills.list }}
+  </ul>
+</div>
+{{/ skills }}
