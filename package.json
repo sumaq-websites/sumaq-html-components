@@ -8,6 +8,7 @@
     "data/**/*",
     "html/**/*",
     "scss/**/*",
+    "js/**/*",
     "themes/**/*"
   ],
   "scripts": {
@@ -23,6 +24,7 @@
     "@storybook/html": "^6.1.21",
     "@sumaq/gulp-mustache-json": "^1.0.0",
     "babel-loader": "^8.2.2",
+    "minireset.css": "^0.0.7",
     "mustache": "^4.1.0"
   }
 }
