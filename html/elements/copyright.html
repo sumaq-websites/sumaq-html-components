@@ -1,0 +1,14 @@
+{{# copyright }}
+<p class="copyright">
+  {{ copyright.year }}
+  {{# copyright.link }}
+  <a target="_blank" href="{{ copyright.link }}">{{ copyright.name }}</a>
+  {{/ copyright.link }}
+  {{^ copyright.link }}
+  {{ copyright.name }}
+  {{/ copyright.link }}
+</p>
+{{/ copyright }}
+{{^ copyright }}
+<em>Not found "copyright" data!</em>
+{{/ copyright }}

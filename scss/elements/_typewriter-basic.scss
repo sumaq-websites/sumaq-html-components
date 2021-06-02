@@ -1,0 +1,24 @@
+.typewriter-simple {
+  .caret {
+    vertical-align: sub;
+    display: inline-block;
+    height: 100%;
+    margin-left: 0.1em;
+    width: 0em;
+    animation: blink-caret 0.75s steps(1) infinite;
+    &.v {
+      border-right: 0.075em solid;
+    }
+    &.h {
+      width: .6em;
+      border-bottom: 0.075em solid;
+    }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    50% {
+      opacity: 0;
+      // border-color: transparent;
+    }
+  }
+}

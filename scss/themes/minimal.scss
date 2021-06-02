@@ -1,9 +1,8 @@
-@import url("//fonts.googleapis.com/css?family=Raleway:400,300,600");
+@import url('//fonts.googleapis.com/css?family=Raleway:400,300,600');
 
-$font-family-primary: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica,
-  Arial, sans-serif;
+$font-family-primary: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@import "../scss/base.scss";
+@import '../scss/base.scss';
 
 // by default: data-theme="light"
 :root {
@@ -11,7 +10,7 @@ $font-family-primary: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica,
   --bg-color: #{$white-alt};
 }
 
-html[data-theme="dark"] {
+html[data-theme='dark'] {
   --text-color: #{$white-alt};
   --bg-color: #{$black-alt};
 }
@@ -116,9 +115,9 @@ a {
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
   height: 2rem;
   cursor: pointer;
   border-radius: 5px;

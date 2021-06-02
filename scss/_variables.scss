@@ -6,7 +6,7 @@ $black: hsl(0, 0%, 0%) !default;
 $black-alt: hsl(0, 0%, 10%) !default;
 
 $white: hsl(0, 0%, 100%) !default;
-$white-alt: hsl(0, 0%, 99%) !default;
+$white-alt: hsl(0, 0%, 98%) !default;
 
 $grey-lighter: hsl(0, 0%, 90%) !default;
 $grey-light: hsl(0, 0%, 70%) !default;
@@ -50,3 +50,7 @@ $breakpoint-widescreen: 1920px; // Extra large laptops and desktops
 // margins and paddings
 
 // shadows
+
+// gradients
+$black-gradient-dark: #000000d7;
+$black-gradient-light: #0000007c;

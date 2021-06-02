@@ -1,0 +1,13 @@
+{{# languages }}
+<ul class="languages {{ languages.classes }}">
+  {{# languages.list }}
+  <li class="item">
+    <a href="{{ link }}" title="{{ title }}" aria-current="{{ aria }}">
+      <span>{{ name }}</span>
+    </a>
+  </li>
+  {{/ languages.list }}
+</ul>
+{{/ languages }} {{^ languages }}
+<em>Not found "languages" data!</em>
+{{/languages}}

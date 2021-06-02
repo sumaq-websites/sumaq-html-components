@@ -1,0 +1,12 @@
+<img
+  class="lazyload blur-up"
+  data-sizes="auto"
+  alt="{{ image.description }}"
+  src="{{# srcImage }}{{ image._folder }}/{{ image.name }}{{/ srcImage }}"
+  data-srcset="
+    {{# srcsetImage }}{{ image._small }}/{{ image._folder }}/{{ image.name }} 640w{{/ srcsetImage }},
+    {{# srcsetImage }}{{ image._medium }}/{{ image._folder }}/{{ image.name }} 960w{{/ srcsetImage }},
+    {{# srcsetImage }}{{ image._large }}/{{ image._folder }}/{{ image.name }} 1280w{{/ srcsetImage }},
+    {{# srcsetImage }}{{ image._widescreen }}/{{ image._folder }}/{{ image.name }} 1920w{{/ srcsetImage }}
+  "
+/>

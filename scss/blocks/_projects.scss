@@ -1,0 +1,119 @@
+.projects {
+  // background: linear-gradient(to right, $grey, $black-gradient-dark);
+  .title {
+    // color: $primary;
+    // font-size: 3rem;
+    // padding: 6rem 0 3rem;
+    // text-align: center;
+    padding-bottom: 3rem;
+  }
+  .list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    @include small-devices {
+      padding: 0 1rem;
+    }
+    .item {
+      position: relative;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      transition: all 0.3s ease-out 0s;
+      &:hover {
+        background-color: $grey-dark;
+        box-shadow: 0 0 1rem 0 $black;
+        .open {
+          opacity: 0.5;
+        }
+      }
+
+      .image {
+        // border: 1px solid rgba(255, 255, 255, 0.274);
+        width: 100%;
+        img {
+          object-fit: cover;
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      .name {
+        color: $primary;
+        margin-bottom: 0.25rem;
+        font-size: 1.25rem;
+        a {
+          color: inherit;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 1px solid $primary;
+          }
+        }
+
+        .description {
+        }
+      }
+
+      .open {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        padding: 0.5rem 0.5rem 0.4rem 0.7rem;
+        opacity: 0.1;
+        border-radius: 3px;
+        background: #dddddd;
+        &:hover {
+          opacity: 1;
+        }
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      @include small-devices {
+        width: 50%;
+        // padding: 1rem;
+        .image {
+          img {
+            height: 320px;
+          }
+        }
+      }
+
+      @include large-devices {
+        width: 33%;
+      }
+    }
+  }
+}
+// https://w3bits.com/labs/css-masonry/3/
+// https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
+// .grid {
+//   --auto-grid-min-size: 20rem;
+//   display: grid;
+//   grid-template-columns: 1fr 2fr; // repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+//   grid-gap: 2rem;
+//   @include small-devices {
+//   }
+//   .item {
+//     &:last-child {
+//     }
+
+//     @include small-devices {
+//       &:nth-child(odd) {
+//       }
+//     }
+//     @include medium-devices {
+//     }
+//     @include large-devices {
+//     }
+//     .title {
+//       position: absolute;
+//     }
+//     .image {
+//       width: 600px;
+//     }
+//   }
+// }

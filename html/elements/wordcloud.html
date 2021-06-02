@@ -1,0 +1,9 @@
+{{# wordcloud }}
+<div class="wordcloud">
+  {{# wordcloud.list }}
+  <span>{{ name }}</span>
+  {{/ wordcloud.list }}
+</div>
+{{/ wordcloud }} {{^ wordcloud }}
+<em>Not found "wordcloud" data!</em>
+{{/wordcloud}}

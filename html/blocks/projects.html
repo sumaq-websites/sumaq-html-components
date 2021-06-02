@@ -1,10 +1,20 @@
 {{# projects }}
-<div class="projects {{ projects.classes }} ">
-  <h2>{{ projects.title }}</h2>
-  <ul>
+<div class="projects">
+  <h2 class="title">{{ projects.title }}</h2>
+  <div class="list">
     {{# projects.list }}
-    <li>{{ name }}</li>
+    <div class="item">
+      {{# image }}
+      <figure class="image">
+        {%> image-responsive %}
+      </figure>
+      {{/ image }}
+      <p class="name">{{ name }}</p>
+      <p class="description">{{ description }}</p>
+    </div>
     {{/ projects.list }}
-  </ul>
+  </div>
 </div>
+{{/ projects }} {{^ projects }}
+<em>Not found "projects" data!</em>
 {{/ projects }}

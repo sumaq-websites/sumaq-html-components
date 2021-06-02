@@ -1,0 +1,21 @@
+.languages {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  .item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1rem;
+      // padding-right: 0.35rem;
+      // border-right: 2px solid $grey;
+    }
+    a {
+      &[aria-current]:not([aria-current='false']) {
+        // color: $white;
+        font-weight: 500;
+        text-decoration: dotted;
+      }
+    }
+  }
+}

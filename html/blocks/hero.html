@@ -1,5 +1,21 @@
 {{# hero }}
 <div class="hero {{ hero.classes }} ">
-  <h1>{{ hero.title }}</h1>
+  {{# hero.image }}
+  <figure class="hero-image">
+    {%> image-responsive %}
+  </figure>
+  {{/ hero.image }}
+  <div class="hero-cover"></div>
+  <div class="hero-body">
+    <p class="pretitle">{{ hero.pretitle }}</p>
+    <h1 class="title">{{ hero.title }}</h1>
+    <p class="subtitle typewriter-simple" data-text="{{ hero.subtitle }}">
+      {{hero.subtitle}}
+      <span class="caret h"></span>
+    </p>
+    {{# hero.social-networks }}
+    {%> social-networks %}
+    {{/ hero.social-networks }}
+  </div>
 </div>
 {{/ hero }}

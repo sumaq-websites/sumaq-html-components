@@ -1,6 +1,6 @@
 {
   "name": "@sumaq/html-components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "HTML Components for SUMAQ Websites",
   "author": "Eduardo Lingán",
   "license": "ISC",
@@ -17,13 +17,12 @@
     "build:sb": "build-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-links": "^6.1.21",
-    "@storybook/html": "^6.1.21",
-    "@sumaq/gulp-mustache-json": "^1.0.0",
+    "@babel/core": "^7.14.3",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/html": "^6.2.9",
     "babel-loader": "^8.2.2",
-    "mustache": "^4.1.0"
+    "mustache": "^4.2.0"
   }
 }

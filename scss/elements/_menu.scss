@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  // position: absolute;
+  // top: 1.5rem;
+  // right: 2rem;
+  // z-index: 100;
+  // text-align: center;
+  .item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+      // padding-right: 0.5rem;
+      // border-right: 2px solid $grey;
+    }
+    //   a {
+    //     color: $grey-light;
+    //     text-decoration: none;
+    //     &:hover {
+    //       color: $white;
+    //     }
+    //     &[aria-current]:not([aria-current='false']) {
+    //       color: $white;
+    //       font-weight: 500;
+    //       text-decoration: dotted;
+    //     }
+    //   }
+  }
+}

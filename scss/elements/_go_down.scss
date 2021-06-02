@@ -1,0 +1,35 @@
+// Inspitarion: https://codepen.io/nxworld/pen/OyRrGy
+.go-down {
+  visibility: hidden;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.75rem;
+  z-index: 100;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  &:hover {
+    border-color: $white;
+  }
+
+  svg {
+    width: 14px;
+    display: block;
+    margin: 10px auto;
+
+    .arrow {
+      animation: scroll 0.35s ease-in alternate infinite;
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+}

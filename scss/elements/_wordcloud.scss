@@ -1,0 +1,33 @@
+$wordcloud-color: $primary;
+
+@mixin sizex($size) {
+  $val: (1 + ($size/10));
+  .size-#{$size} {
+    font-size: #{$val}em;
+    @if $size >= 5 {
+      color: lighten($wordcloud-color, 20);
+      font-weight: 300;
+    }
+    @if $size >= 8 {
+      color: lighten($wordcloud-color, 5);
+      font-weight: 400;
+    }
+  }
+}
+
+.wordcloud {
+  font-size: calc(1rem + 0.75vw);
+  padding: 0 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  @for $i from 0 through 10 {
+    @include sizex($i);
+  }
+
+  .word {
+    margin: 0.1em 0.5em;
+  }
+}

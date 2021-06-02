@@ -1,10 +1,13 @@
 {{# skills }}
 <div class="skills {{ skills.classes }} ">
   <h2>{{ skills.title }}</h2>
-  <ul>
+  <ul class="wordcloud">
     {{# skills.list }}
-    <li>{{ name }} ({{ value }})</li>
+    <li class="word size-{{ value }}">{{ name }}</li>
     {{/ skills.list }}
   </ul>
 </div>
+{{/ skills }}
+{{^ skills }}
+<em>Not found "skills" data!</em>
 {{/ skills }}

@@ -1,0 +1,13 @@
+{{# menu }}
+<ul class="menu {{ menu.classes }}">
+  {{# menu.list }}
+  <li class="item">
+    <a href="{{ link }}" title="{{ title }}" aria-current="{{ aria }}">
+      <span>{{ name }}</span>
+    </a>
+  </li>
+  {{/ menu.list }}
+</ul>
+{{/ menu }} {{^ menu }}
+<em>Not found "menu" data!</em>
+{{/menu}}
