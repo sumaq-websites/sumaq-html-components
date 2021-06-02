@@ -1,9 +1,3 @@
-@import url('//fonts.googleapis.com/css?family=Raleway:400,300,600');
-
-$font-family-primary: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-@import '../scss/base.scss';
-
 // by default: data-theme="light"
 :root {
   --text-color: #{$black-alt};
