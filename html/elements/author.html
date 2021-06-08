@@ -1,5 +1,5 @@
 {{# author }}
-<p class="author {{ author.classes }}">{{ author.text }} <a target="_blank" href="{{ author.link }}">{{ author.name }}</a></p>
+<p class="author {{ author.classes }}">{{ author._input.text }} <a target="_blank" href="{{ author._input.link }}">{{ author._input.name }}</a></p>
 {{/ author }}
 {{^ author }}
 <em>Not found "author" data!</em>

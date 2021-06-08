@@ -1,12 +1,12 @@
 {{# copyright }}
 <p class="copyright">
-  {{ copyright.year }}
-  {{# copyright.link }}
-  <a target="_blank" href="{{ copyright.link }}">{{ copyright.name }}</a>
-  {{/ copyright.link }}
-  {{^ copyright.link }}
-  {{ copyright.name }}
-  {{/ copyright.link }}
+  {{ copyright._input.year }}
+  {{# copyright._input.link }}
+  <a target="_blank" href="{{ copyright._input.link }}">{{ copyright._input.name }}</a>
+  {{/ copyright._input.link }}
+  {{^ copyright._input.link }}
+  {{ copyright._input.name }}
+  {{/ copyright._input.link }}
 </p>
 {{/ copyright }}
 {{^ copyright }}

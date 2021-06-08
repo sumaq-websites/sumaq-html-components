@@ -1,8 +1,8 @@
 {{# projects }}
 <div class="projects">
-  <h2 class="title">{{ projects.title }}</h2>
+  <h2 class="title">{{ projects._input.title }}</h2>
   <div class="list">
-    {{# projects.list }}
+    {{# projects._input.list }}
     <div class="item">
       {{# image }}
       <figure class="image">
@@ -12,7 +12,7 @@
       <p class="name">{{ name }}</p>
       <p class="description">{{ description }}</p>
     </div>
-    {{/ projects.list }}
+    {{/ projects._input.list }}
   </div>
 </div>
 {{/ projects }} {{^ projects }}
