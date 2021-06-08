@@ -1,21 +1,21 @@
 {{# hero }}
 <div class="hero {{ hero.classes }} ">
-  {{# hero.input.image }}
+  {{# hero._input.image }}
   <figure class="hero-image">
     {%> image-responsive %}
   </figure>
-  {{/ hero.input.image }}
+  {{/ hero._input.image }}
   <div class="hero-cover"></div>
   <div class="hero-body">
-    <p class="pretitle">{{ hero.input.pretitle }}</p>
-    <h1 class="title">{{ hero.input.title }}</h1>
-    <p class="subtitle typewriter-simple" data-text="{{ hero.input.subtitle }}">
-      {{hero.input.subtitle}}
+    <p class="pretitle">{{ hero._input.pretitle }}</p>
+    <h1 class="title">{{ hero._input.title }}</h1>
+    <p class="subtitle typewriter-simple" data-text="{{ hero._input.subtitle }}">
+      {{hero._input.subtitle}}
       <span class="caret h"></span>
     </p>
-    {{# hero.input.social-networks }}
+    {{# hero._input.social-networks }}
     {%> social-networks %}
-    {{/ hero.input.social-networks }}
+    {{/ hero._input.social-networks }}
   </div>
 </div>
 {{/ hero }}
