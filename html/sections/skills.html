@@ -1,13 +1,13 @@
 {{# skills }}
-<div class="skills {{ skills.classes }} ">
+<section class="skills-wrapper">
   <h2>{{ skills._input.title }}</h2>
   <ul class="wordcloud">
     {{# skills._input.list }}
     <li class="word size-{{ value }}">{{ name }}</li>
     {{/ skills._input.list }}
   </ul>
-</div>
+</section>
 {{/ skills }}
 {{^ skills }}
-<em>Not found "skills" data!</em>
+<em class="data-not-found">Not found "skills" data!</em>
 {{/ skills }}

@@ -1,5 +1,6 @@
-<section>
-  <h2>Contact me</h2>
+{{# contact }}
+<section class="contact-wrapper">
+  <h2>{{ contact._input.title }}</h2>
   <form class="contact-form">
     <fieldset>
       <legend></legend>
@@ -15,3 +16,7 @@
     </fieldset>
   </form>
 </section>
+{{/ contact }}
+{{^ contact }}
+<em class="data-not-found">Not found "contact" data!</em>
+{{/ contact }}

@@ -1,5 +1,5 @@
 {{# projects }}
-<div class="projects">
+<section class="projects-wrapper">
   <h2 class="title">{{ projects._input.title }}</h2>
   <div class="list">
     {{# projects._input.list }}
@@ -14,7 +14,8 @@
     </div>
     {{/ projects._input.list }}
   </div>
-</div>
-{{/ projects }} {{^ projects }}
-<em>Not found "projects" data!</em>
+</section>
+{{/ projects }}
+{{^ projects }}
+<em class="data-not-found">Not found "projects" data!</em>
 {{/ projects }}

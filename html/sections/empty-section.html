@@ -1,11 +1,11 @@
 {{# empty-section }}
-<div class="empty-section {{ empty_section.classes }} ">
+<section class="empty-section-wrapper">
   <h2>{{ empty-section._input.title }}</h2>
   <div class="content">
     <p>{{ empty-section._input.text }}</p>
   </div>
-</div>
+</section>
 {{/ empty-section }}
 {{^ empty-section }}
-<em>Not found "empty-section" data!</em>
+<em class="data-not-found">Not found "empty-section" data!</em>
 {{/ empty-section }}

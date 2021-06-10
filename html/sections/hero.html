@@ -1,5 +1,5 @@
 {{# hero }}
-<div class="hero {{ hero.classes }} ">
+<section class="hero {{ hero.classes }} ">
   {{# hero._input.image }}
   <figure class="hero-image">
     {%> image-responsive %}
@@ -17,5 +17,8 @@
     {%> social-networks %}
     {{/ hero._input.social-networks }}
   </div>
-</div>
+</section>
+{{/ hero }}
+{{^ hero }}
+<em class="data-not-found">Not found "hero" data!</em>
 {{/ hero }}

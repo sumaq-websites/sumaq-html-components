@@ -1,5 +1,5 @@
 {{# copyright }}
-<p class="copyright">
+<p class="copyright-wrapper">
   {{ copyright._input.year }}
   {{# copyright._input.link }}
   <a target="_blank" href="{{ copyright._input.link }}">{{ copyright._input.name }}</a>
@@ -10,5 +10,5 @@
 </p>
 {{/ copyright }}
 {{^ copyright }}
-<em>Not found "copyright" data!</em>
+<em class="data-not-found">Not found "copyright" data!</em>
 {{/ copyright }}

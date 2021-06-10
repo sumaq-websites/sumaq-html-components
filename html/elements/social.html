@@ -1,5 +1,5 @@
 {{# social }}
-<div class="social-networks {{ social.classes }}">
+<div class="social-wrapper {{ social.classes }}">
   <ul>
     {{# social._input.list }}
     <li>
@@ -12,5 +12,5 @@
 </div>
 {{/ social }}
 {{^ social }}
-<em>Not found "social" data!</em>
+<em class="data-not-found">Not found "social" data!</em>
 {{/social}}

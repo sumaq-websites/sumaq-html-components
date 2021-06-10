@@ -1,10 +1,10 @@
 {{# wordcloud }}
-<div class="wordcloud">
+<div class="wordcloud-wrapper">
   {{# wordcloud._input.list }}
   <span>{{ name }}</span>
   {{/ wordcloud._input.list }}
 </div>
 {{/ wordcloud }}
 {{^ wordcloud }}
-<em>Not found "wordcloud" data!</em>
+<em class="data-not-found">Not found "wordcloud" data!</em>
 {{/wordcloud}}

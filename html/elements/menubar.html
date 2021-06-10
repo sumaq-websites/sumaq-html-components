@@ -1,0 +1,13 @@
+{{# menubar }}
+<ul class="menubar-wrapper {{ menubar.classes }}">
+  {{# menubar._input.list }}
+  <li class="item">
+    <a href="{{ link }}" title="{{ title }}" aria-current="{{ aria }}">
+      <span>{{ name }}</span>
+    </a>
+  </li>
+  {{/ menubar._input.list }}
+</ul>
+{{/ menubar }} {{^ menubar }}
+<em class="data-not-found">Not found "menubar" data!</em>
+{{/menubar}}

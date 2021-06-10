@@ -1,0 +1,17 @@
+
+.error-wrapper {
+  margin: 5rem;
+  padding: 8rem 0;
+  text-align: center;
+  background-color: $grey-lighter;
+  h1 {
+    font-size: 50pt;
+    margin-bottom: 4rem;
+  }
+  p,
+  a {
+    display: block;
+    font-size: 20pt;
+    margin-top: 1rem;
+  }
+}

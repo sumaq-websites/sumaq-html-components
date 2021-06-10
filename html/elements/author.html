@@ -1,6 +1,6 @@
 {{# author }}
-<p class="author {{ author.classes }}">{{ author._input.text }} <a target="_blank" href="{{ author._input.link }}">{{ author._input.name }}</a></p>
+<p class="author-wrapper {{ author.classes }}">{{ author._input.text }} <a target="_blank" href="{{ author._input.link }}">{{ author._input.name }}</a></p>
 {{/ author }}
 {{^ author }}
-<em>Not found "author" data!</em>
+<em class="data-not-found">Not found "author" data!</em>
 {{/ author }}
